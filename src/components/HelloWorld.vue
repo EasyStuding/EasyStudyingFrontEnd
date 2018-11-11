@@ -31,10 +31,16 @@
 </template>
 
 <script>
+
+import { env } from '../env';
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String,
+  },
+  data() {
+    return env;
   },
 };
 </script>

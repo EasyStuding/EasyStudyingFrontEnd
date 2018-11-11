@@ -14,8 +14,12 @@ module.exports = {
       js: 'never',
       vue: 'never',
     }],
+    'import/prefer-default-export': 'off',
+    'ordered-imports': false,
   },
   parserOptions: {
     parser: 'babel-eslint',
+    sourceType: 'module',
+    allowImportExportEverywhere: true,
   },
 };
